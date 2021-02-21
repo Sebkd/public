@@ -98,6 +98,7 @@ class Get_dict_html():
                               r'|\b[А-я]+\b', str (my_obj_soup.find_all ('name')))
         return {name_re[index]: [value_re[index], nominal_re[index]] for index in range (len (nominal_re))}
 
+
 class Visio():
 
     @staticmethod
